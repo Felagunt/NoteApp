@@ -1,5 +1,6 @@
 package com.plcoding.cleanarchitecturenoteapp.feature_note.domain.util
 
+
 sealed class NoteOrder(
     val orderType: OrderType
 ) {
