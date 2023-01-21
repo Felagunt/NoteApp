@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
 @HiltViewModel
-class NoteViewModel(
+class NotesViewModel(
     private val noteUseCases: NoteUseCases
 ) :ViewModel() {
 
