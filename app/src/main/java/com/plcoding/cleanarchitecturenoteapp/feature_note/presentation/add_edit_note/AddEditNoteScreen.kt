@@ -25,6 +25,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.plcoding.cleanarchitecturenoteapp.feature_note.domain.model.Note
 import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.add_edit_note.components.TransparentHintTextField
+import com.plcoding.cleanarchitecturenoteapp.feature_note.presentation.util.Screen
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -56,7 +57,7 @@ fun AddEditNoteScreen(
                     )
                 }
                 is AddEditNoteViewModel.UiEvent.SaveNote -> {
-                    //navController.navigate()
+                    navController.navigate(Screen.NotesScreen.route)
                 }
             }
         }
